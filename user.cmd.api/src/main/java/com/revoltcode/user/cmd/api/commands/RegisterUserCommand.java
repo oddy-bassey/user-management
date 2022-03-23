@@ -5,6 +5,9 @@ import lombok.Builder;
 import lombok.Data;
 import org.axonframework.modelling.command.TargetAggregateIdentifier;
 
+import javax.validation.Valid;
+import javax.validation.constraints.NotNull;
+
 /*
  * NOTE:
  * In order for axon know which instance of the aggregate type should handle the command message,
@@ -21,5 +24,8 @@ public class RegisterUserCommand {
 
     @TargetAggregateIdentifier
     private String id;
+
+    @Valid
+    @NotNull(message = "no user details were supplied")
     private User user;
 }
