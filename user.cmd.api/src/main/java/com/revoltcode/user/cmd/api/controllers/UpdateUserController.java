@@ -1,8 +1,7 @@
 package com.revoltcode.user.cmd.api.controllers;
 
 import com.revoltcode.user.cmd.api.commands.UpdateUserCommand;
-import com.revoltcode.user.cmd.api.dto.BaseResponse;
-import com.revoltcode.user.cmd.api.dto.RegisterUserResponse;
+import com.revoltcode.user.core.dto.BaseResponse;
 import lombok.extern.slf4j.Slf4j;
 import org.axonframework.commandhandling.gateway.CommandGateway;
 import org.springframework.http.HttpStatus;

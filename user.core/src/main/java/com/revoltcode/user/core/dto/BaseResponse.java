@@ -1,4 +1,4 @@
-package com.revoltcode.user.cmd.api.dto;
+package com.revoltcode.user.core.dto;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
