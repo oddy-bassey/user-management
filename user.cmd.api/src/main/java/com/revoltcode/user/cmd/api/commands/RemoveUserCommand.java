@@ -1,5 +1,6 @@
 package com.revoltcode.user.cmd.api.commands;
 
+import lombok.AllArgsConstructor;
 import lombok.Data;
 import org.axonframework.modelling.command.TargetAggregateIdentifier;
 
@@ -13,6 +14,7 @@ import org.axonframework.modelling.command.TargetAggregateIdentifier;
  * the expressed intent. E.g User information to register a new user
  */
 @Data
+@AllArgsConstructor
 public class RemoveUserCommand {
 
     @TargetAggregateIdentifier

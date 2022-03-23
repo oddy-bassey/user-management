@@ -13,7 +13,7 @@ import javax.validation.Valid;
 
 @Slf4j
 @RestController
-@RequestMapping("/api/v1/updateUser")
+@RequestMapping(path = "/api/v1/updateUser")
 public class UpdateUserController {
 
     private final CommandGateway commandGateway;
